@@ -1,0 +1,609 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+
+}
+
+header {
+    background-color: ffffff;
+    height: 70px;
+}
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col-2 {
+    width: 16.66%;
+    float: left;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-5 {
+    width: 41.66%;
+    float: left;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-7 {
+    width: 58.66%;
+    float: left;
+}
+
+.col-8 {
+    width: 66.66%;
+    float: left;
+}
+
+.col-9 {
+    width: 74.33%;
+    float: left;
+}
+
+.col-10 {
+    width: 83.66%;
+    float: left;
+}
+
+.col-11 {
+    width: 91.33%;
+    float: left;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+header .logo {
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.menu {
+    margin: 10px;
+    padding: 20px 10px;
+    margin-right: 50px;
+
+}
+
+header .menu ul li a {
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header .menu li {
+    float: left;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+header .menu li a {
+    color: black;
+    font: size 1.3rem;
+    font-weight: 400;
+}
+
+header .menu li a i {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* hero section*/
+
+.herosection {
+    background-image: url('images/mac.jpg');
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-contant h2 {
+    color: white;
+    font-size: 4.0rem;
+    font-weight: 100;
+    padding-top: 150px;
+    margin: 10px 50px;
+    margin-bottom: 30px;
+}
+
+.hero-contant p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-top: 20px;
+    margin: 10px 50px;
+    margin-bottom: 30px;
+}
+
+.hero-contant button {
+    opacity: 0.5;
+    margin: 10px 50px;
+    padding: 15px 30px;
+    text-transform: capitalize;
+}
+
+/* about section */
+.about-container {
+    margin: 20px 20px;
+
+}
+
+h3 {
+    text-align: center;
+    margin-top: 128px;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.para {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.about-container i {
+    font-size: xxx-large;
+    margin: 40px 20px;
+    margin-left: 150px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-container h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.about-container .intro {
+    font-size: 17px;
+    font-weight: 100;
+    text-align: center;
+
+
+}
+
+/* design section */
+
+.design-cotainer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 0% auto;
+    margin-top: 150px;
+    height: 600px;
+
+}
+
+.design-contant {
+    padding: 70px 0px;
+    margin-left: 40px;
+}
+
+.design-cotainer .design-contant .col-6 {
+    margin-top: 40px;
+}
+
+.design-cotainer .design-contant h5 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+.design-cotainer .design-contant .design {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.design-cotainer .design-contant .btn {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+.design-cotainer img {
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+/* team section */
+.team-section {
+    padding: 0 auto;
+    margin-top: 100px;
+
+}
+
+.team-card {
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px;
+}
+
+
+.team-card h5 {
+    margin: 10px 10px;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.team-card font {
+    margin: 10px 5px;
+    font-size: 1.0rem;
+    font-weight: 100;
+    color: gray;
+}
+
+.team-card .team {
+    margin: 10px 5px;
+    font-size: 1.0rem;
+    font-weight: 100;
+
+}
+
+.team-card .contact {
+    margin: 5px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 10px 20px;
+    width: 340px;
+    text-align: center;
+    border: none;
+}
+
+.team-card .contact i {
+    margin-right: 5px;
+}
+
+/* prom section */
+
+.prom-section {
+    background-color: #616161;
+    padding: 10px;
+    margin: 0% auto;
+    margin-top: 150px;
+    height: 30vh;
+}
+
+.prom h6 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin-left: 60px;
+    margin-top: 60px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.prom .prmon {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* work section */
+.work-container {
+    width: 95%;
+    margin: 0% auto;
+
+}
+
+.work-container .design-1 img {
+    margin-top: 50px;
+    margin-left: 2px;
+    width: 350px;
+    margin-bottom: 5px;
+
+}
+
+.work-container .design-2 img {
+    margin-left: 2px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+/*  skils section  */
+.skils-container {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 400px;
+    margin-top: 130px;
+    padding: 70px 0px;
+}
+
+.skils-container .skils-contant h5 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0% 60px;
+    margin-bottom: 20px;
+}
+
+.skils-container .skils-contant p {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0% 60px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.skils-container .skils-contant1 {
+
+    margin-left: 100px;
+}
+
+.skils-container .skils-contant1 i {
+    font-size: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.skils-container .skils-contant1 p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+/* PRICING section */
+.pricing-container {
+    background-color: #616161;
+    width: 100%;
+    height: 950px;
+    padding-top: 10px;
+    padding-left: 25px;
+    float: left;
+}
+
+.pricing-container h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.pricing-container .para {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.pricing-container .basic-card {
+    color: #f1f1f1;
+    height: 510px;
+    width: 400px;
+    margin-top: 90px;
+    float: left;
+    border: 1px solid white;
+
+}
+
+.pricing-container .basic-card h6 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: 100;
+    background-color: black;
+    height: 80px;
+
+}
+
+.pricing-container .basic-card p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 1.3;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.pricing-container .basic-card button {
+    background-color: black;
+    margin: 20px 130px;
+    padding: 15px 40px;
+    color: white;
+
+}
+        /* basic-card1 section */
+
+.pricing-container .basic-card1 {
+    color: white;
+    height: 565px;
+    width: 400px;
+    margin-top: 55px;
+    margin-bottom: 90px;
+    border: 1px solid;
+    float: left;
+}
+
+.pricing-container .basic-card1 h6 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: 100;
+    background-color: red;
+    height: 120px;
+
+}
+
+.pricing-container .basic-card1 p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+}
+
+.pricing-container .basic-card1 button {
+    background-color: black;
+    margin: 20px 130px;
+    padding: 15px 40px;
+    color: white;
+
+
+}
+
+    /* basic-card2 section */
+
+.pricing-container .basic-card2 {
+    color: #f1f1f1;
+    height: 510px;
+    width: 400px;
+    margin-top: 90px;
+    float: left;
+    border: 1px solid white;
+
+}
+
+.pricing-container .basic-card2 h6 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: 100;
+    background-color: black;
+    height: 80px;
+
+}
+
+.pricing-container .basic-card2 p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+     line-height: 1.3;
+     text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.pricing-container .basic-card2 button {
+    background-color: black;
+    margin: 20px 130px;
+    padding: 15px 40px;
+    color: white;
+
+}
+
+/* contact section */
+.contact-container {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 950px;
+    padding-top: 10px;
+    padding-left: 25px;
+    float: left;
+}
+
+.contact-container h3 {
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.contact-container .para {
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.contact-container .location-section{
+    margin-top: 50px;
+   
+}
+.contact-container .location-section p{
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px 20px;
+    margin-bottom: 20px;
+}
+.contact-container .location-section i{
+    font-size: 28px;
+    margin-right: 20px;
+     margin-bottom: 20px;
+    
+}
+
+/* form section */
+.contact-container .form-section{
+   width: 100%;
+   margin: 30px 5px;   
+}
+
+.contact-container .form-section input{
+    width: 98%;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 100;
+    border:1px solid #ccc ;
+}
+
+.contact-container .form-section button{
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: lighter;
+}    
+.contact-container .form-section i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.contact-container .image-section img{
+    margin-top: 40px;
+    width: 99%;
+    height:800px ;
+    display: block;
+    margin-bottom: 50px;
+  
+} 
+
+
+
+
+
+
+
+

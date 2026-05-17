@@ -1,0 +1,14 @@
+.box{
+    /* border-style: dashed;
+    border-width: 10px;
+    border-color: chartreuse; */
+    
+    border: 10px solid blue;
+   
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    padding: 20px 30px 40px 50px;
+    margin: 20px;
+
+}

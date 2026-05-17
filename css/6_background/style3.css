@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(228, 234, 232);
+   
+
+}
+.box{
+    width: 90px;
+    height: 90px;
+    background-image:radial-gradient(red,pink,blue,yellow,purple)
+}
+.box-1{
+    height:90vh;
+    width: 90%;
+    padding: 15px;
+    
+    background-image: url('https://wallpaperaccess.com/full/4723250.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-clip: padding-box;
+    /* background-origin: padding-box; */
+    border: 10px dashed rgb(22, 69, 254);
+    background-attachment: fixed;
+
+}

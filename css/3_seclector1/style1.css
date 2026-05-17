@@ -1,0 +1,20 @@
+
+
+#ex1{
+    color: pink;
+}
+
+#ex2{
+    font-size:2.5rem;
+    text-transform: uppercase;
+    color: blue;
+    text-shadow: 2px 2px 4px black;
+}
+
+.myclass{
+    color: brown;
+}
+
+.parent  > p{
+    color: cadetblue;
+}

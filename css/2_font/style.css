@@ -1,0 +1,23 @@
+body{
+     font-family: "Nunito", sans-serif;
+     background-color: cornflowerblue;
+}
+h1{
+    color: pink;
+   
+}
+
+p{
+    color:pink;
+    text-align: justify;
+    text-transform:capitalize;
+    text-decoration:underline;
+    line-height: 2;
+    text-shadow: 5px 5px 5px black;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 400;
+    font-style:italic;
+    font-size: 1.5rem;
+}

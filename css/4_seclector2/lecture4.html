@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>selector</title>
+</head>
+<style>
+    .hello,.word,.para{
+        color: rgb(205, 11, 150);
+    }
+    h1:hover{
+        color: aquamarine;
+    }
+    a:visited{
+        color: brown;
+    }
+    a:hover{
+        color: blueviolet;
+    }
+    li:first-child{
+        color: rgb(6, 246, 210);
+    }
+    li:nth-child(3){
+        color: rgb(10, 95, 252);
+    }
+    li:last-child{
+        color: rgb(252, 142, 8);
+    }
+    .box{
+        background-color: pink;
+        height: 50px;
+         width:50px;
+    }
+    .box::after{
+        content: "hiiii";
+    }
+
+    a[target]{
+        color:pink;
+    }
+</style>
+<body>
+    <h1 class="hello">hello</h1>
+    <h2 class="word">hello word</h2>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor voluptas ratione, vero excepturi ipsum nesciunt pariatur optio, explicabo id, enim natus quibusdam. Ducimus, tempora est provident ipsa similique illum!</p>
+
+    <a href="#">home</a>
+    <a href="https://www.google.com" target="_blank">google</a>
+
+    <ul>
+        <li>home</li>
+        <li>menu</li>
+        <li>about</li>
+        <li>contact</li>
+        <li>serviecs</li>
+    </ul>
+
+    <div class="box"></div>
+</body>
+</html>
