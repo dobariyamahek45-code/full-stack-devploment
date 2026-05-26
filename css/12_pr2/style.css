@@ -232,6 +232,12 @@ h3 {
 
 }
 
+.design-cotainer .design-contant i{
+    font-size: medium;
+    margin-right: 5px;
+   
+}
+
 .design-cotainer .design-contant .btn {
     padding: 10px 30px;
     background-color: black;
@@ -247,8 +253,10 @@ h3 {
 
 /* team section */
 .team-section {
-    padding: 0 auto;
+    padding: 0% 20px;
     margin-top: 100px;
+    
+
 
 }
 
@@ -524,15 +532,11 @@ h3 {
 }
 
 /* contact section */
-.contact-container {
-    background-color: #f1f1f1;
-    width: 100%;
-    height: 950px;
-    padding-top: 10px;
-    padding-left: 25px;
-    float: left;
+.contact-container{
+    width:100%;
+    background:#f1f1f1;
+    padding:60px 25px;
 }
-
 .contact-container h3 {
     color: black;
     text-align: center;
@@ -585,7 +589,12 @@ h3 {
     background-color: black;
     font-size: 15px;
     font-weight: lighter;
-}    
+    
+}  
+.contact-container .form-section button:hover{
+    background-color:#616161;
+}  
+
 .contact-container .form-section i{
     margin-right: 5px;
     margin-left: 5px;
@@ -594,16 +603,60 @@ h3 {
 .contact-container .image-section img{
     margin-top: 40px;
     width: 99%;
-    height:800px ;
-    display: block;
+    height:auto;
+    display: inline-block;
     margin-bottom: 50px;
   
 } 
 
+/* footer section */
 
+.footer-container{
+    width:100%;
+    background:black;
+    padding:80px 20px;
+     text-align:center; 
+}
 
+.footer-container .top-section button{
+    background:white;
+    color:black;
+    padding:12px 25px;
+    font-size:15px;
+    margin-bottom:20px;
+    font-weight: 100;
+}
 
+.footer-container .top-section button:hover{
+    background:#ccc;
+}
 
+.footer-container .top-section i{
+    margin-right:5px;
+}
 
+.footer-container .social-icons{
+    margin-bottom: 15px;
+}
 
+.footer-container .social-icons i{
+    color:white;
+    font-size:23px;
+    
+}
 
+.footer-container .social-icons i:hover{
+    color:#999;
+}
+
+.footer-container .link-section a{
+    color:white;
+    font-size:15px;
+    text-decoration:none;
+    font-weight: 100;
+   
+}
+
+.footer-container a:hover{
+    color:#999;
+}
