@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    height:150px;
+    margin: 0px auto;
+    display:flex;
+    /* justify-content:center; */
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: blueviolet;
+    gap:20px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}

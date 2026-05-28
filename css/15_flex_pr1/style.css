@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+/* silebar */
+.silebar {
+    width: 20%;
+    height: 100vh;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.silebar .cmp-name h1 {
+    padding: 90px 0px;
+    margin: 0px 40px;
+    color: white;
+    font-weight: 24px;
+    font-weight: 600;
+
+}
+
+.silebar .menu-section a {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.silebar .menu-section ul li {
+    margin-bottom: 25px;
+
+}
+
+.silebar .menu-section ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 40px;
+    color: white;
+
+}
+
+
+/* main-contanet */
+.main-contanet {
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    padding: 90px 0px;
+    margin: 0px 40px;
+    margin-left:350px;
+
+
+}
+
+/* title-section */
+.title-section h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title-section p {
+    color: red;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* image section */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-section img {
+    width: 550px;
+    margin-bottom: -6px;
+    margin-top: 16px;
+
+}
+
+/* Services-section */
+.Services-section {
+    margin-top: 60px;
+}
+
+.Services-section h3 {
+    font-size: 48px;
+    color: red;
+    margin-bottom: 20px;
+
+}
+
+.Services-section p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.Services-section .para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Designers-section */
+.Designers-section {
+    margin-top: 60px;
+}
+
+.Designers-section h3 {
+    font-size: 48px;
+    color: red;
+    margin-bottom: 20px;
+
+}
+
+.Designers-section p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.Designers-section .para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.Designers-section bold {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+/* card-section */
+.Designers-section .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.Designers-section .card-section .card-1,
+.card-2,
+.card-3 {
+    background-color: #f1eeee;
+}
+
+.Designers-section .card-section .card-1 img {
+    width: 370px;
+
+}
+
+.Designers-section .card-section .card-1 h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-1 font {
+    font-size: 18px;
+    color: #565656;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-1 p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+    line-height: 1.5;
+
+}
+
+/* card-2  */
+
+.Designers-section .card-section .card-2 img {
+    width: 360px;
+}
+
+.Designers-section .card-section .card-2 h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-2 font {
+    font-size: 20px;
+    color: #565656;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-2 p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+    line-height: 1.5;
+
+}
+
+/* card-3 */
+.Designers-section .card-section .card-3 img {
+    width: 370px;
+}
+
+.Designers-section .card-section .card-3 h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-3 font {
+    font-size: 20px;
+    color: #565656;
+    font-weight: 400;
+    margin: 20px 20px;
+
+}
+
+.Designers-section .card-section .card-3 p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 20px;
+    line-height: 1.5;
+
+}
+
+/* Packages  section */
+.Packages-section h4 {
+    font-size: 48px;
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.Packages-section p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.Packages-section .packages-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Packages-section .packages-card .basic-card,
+.pro-card {
+    background-color: #eaeaea;
+    width: 49%;
+}
+
+.Packages-section .packages-card .basic-card h5 {
+    background-color: gray;
+    height: 90px;
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.Packages-section .packages-card .basic-card p {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.Packages-section .packages-card .basic-card .para {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.9;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.Packages-section .packages-card .basic-card p button {
+    padding: 15px 30px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: white;
+}
+
+.Packages-section .packages-card .basic-card p button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* pro card */
+
+.Packages-section .packages-card .pro-card h5 {
+    background-color: red;
+    height: 90px;
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.Packages-section .packages-card .pro-card p {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.Packages-section .packages-card .pro-card .para {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.9;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.Packages-section .packages-card .pro-card p button {
+    padding: 15px 30px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: red;
+    color: white;
+}
+
+.Packages-section .packages-card .pro-card p button:hover {
+    background-color: black;
+
+}
+
+/* contact section */
+.contact-section h6 {
+    font-size: 48px;
+    color: red;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    font-size: 16px;
+
+}
+
+.contact-section input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+}
+
+.contact-section button {
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.contact-section button:hover {
+    background-color: #cdcbcb;
+    color: black;
+}
+
+/* footer-section */
+
+.footer-section {
+    background-color: #eaeaea;
+    width: 104%;
+    height: 110px;
+    text-align: end;
+    padding: 50px 60px;
+    margin-top: 60px;
+    
+}
