@@ -1,123 +1,447 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-}
-.container{
-   width: 90%;
-   height: 30px;
-}
-header{
-    background-color: rgb(250, 248, 245);
-    height: 90px;
-}
-.col-1{
-    width: 8.33%;
-}
-.col-2{
-    width: 16.66%;
-}
-.col-3{
-    width:25%;
-}
-.col-4{
-    width:33.33%;
-}
-.col-5{
-    width:41.66%;
-}
-.col-6{
-    width:50%;
-    float: left;
-}
-.col-7{
-    width:58.66%;
-}
-.col-8{
-    width:66.66%;
-}
-.col-9{
-    width:74.33%;
-}
-.col-10{
-    width:83.66%;
-}
-.col-11{
-    width:91.33%;
-}
-.col-12{
-    width:100%;
-}
-.clear{
-    clear: both;
+    font-family: "Roboto", sans-serif;
 }
 
-.logo{
-    float: left;
-    margin: 10px;
-    padding: 6px;
-    
-}
-.menu,ul{
-   
-    list-style: none;
-}
-
-li{
-    float: left;
-    line-height: 3.8;
-    margin:5px 10px;
-    padding: 10px 30px;
-    
-    font-weight:bolder;
-    font-size: 0.9rem;
-    text-transform:uppercase;
-    letter-spacing:0.1rem;
-}
-.location{
-    float:right;
-    text-transform: capitalize;
-    padding: 10px auto;
-   
-}
-p{
-    float: left;
-    line-height: 2.5;
-    margin:10px 10px;
-    padding: 10px;
-    font-weight: 900;
-}
-
-button{
-    float: left;
-    line-height: 3.4;
-    padding:0% 15px;   
-    height: 55px;
-    font-size: 1.0rem;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-left:10px;
-    margin: 10px;
-    color: aliceblue;
-}
-.row{
+.container {
     width: 90%;
-    background-color:#32462f;
-    height: 90px;
-    margin: 0% auto;
-    text-align:justify;
+    margin: 0px auto;
+
 }
-.para{
-    font-size:1.5rem;
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-1 {
+    width: 8.33%;
+    padding: 0px 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding: 0px 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 0px 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    padding: 0px 15px;
+}
+
+.col-6 {
+
+    width: 50%;
+    /* padding: 0px 15px;*/
+} 
+
+.col-7 {
+    width: 58.33%;
+    padding: 0px 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    padding: 0px 15px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0px 15px;
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0px 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    padding: 0px 15px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.ailgn-items-center {
+    align-items: center;
+}
+
+/* menu section */
+header{
+   
+    padding: 15px 0px;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+header .menu ul {
+    display: flex;
+
+}
+
+header .menu ul li a {
+    margin: 0px 15px;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: #0c7b54;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.signin ul {
+    display: flex;
+}
+
+.signin ul li {
+    margin: 0px 10px;
+}
+
+.signin ul li a {
+    margin-right: 30px;
+    font-size: 18px;
+    color: black;
+
+
+}
+
+.signin ul li a:hover {
+    color: #0c7b54;
+}
+
+.signin ul li a i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.signinbtn {
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 15px;
+    padding: 9px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.joinnow {
+    background: black;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 9px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
     color: white;
-    font-weight: 900;
-   
+}
+
+.signinbtn:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+/* order section */
+.order {
+    background-color: #133c0d;
+    padding: 40px 0px;
+}
+
+.order-contant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.order-contant p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-contant .btn {
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid white;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+.order-contant .btn:hover {
+    background-color: #0c7b54;
+}
+
+/* grads section */
+.grads {
+    margin-top: 35px;
+    background-color: #006242;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.grads-contant {
+
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+
+}
+
+.grads-contant h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.grads-contant p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.75;
+}
+
+.grads-contant .btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #006242;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 20px 0px;
+}
+
+
+
+
+/* summer section */
+.summer {
+    margin-top: 35px;
+    background-color: #006242;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.summer-contant {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 45px;
+
+}
+
+.summer-contant h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.summer-contant p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.75;
+}
+
+.summer-contant .btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(40, 119, 53);
+    background-color: #ebeeed;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 20px 0px;
+}
+
+.summer-image .btn:hover {
+    background-color: #eff5f3;
+}
+
+/* pickup section */
+.pickup {
+    margin-top: 40px;
+    background-color: #006242;
+    justify-content: center;
+    text-align: center;
+}
+
+.pickup-contant {
+
+    justify-content: center;
+    align-items: center;
+    padding: 50px 45px;
+}
+
+.pickup-contant h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.pickup-contant p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.75;
+}
+
+.pickup-contant .btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #006242;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 30px 0px;
+}
+
+/* Unicorn section */
+.Unicorn {
+    margin-top: 40px;
+    background-color: #006242;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Unicorn-contant {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+
+}
+
+.Unicorn-contant h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.Unicorn-contant p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.75;
+}
+
+.Unicorn-contant .btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(40, 119, 53);
+    background-color: #ebeeed;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 15px 0px;
+}
+
+/* footer-section */
+.footer-section {
+   justify-content: flex-start;
+    align-items: center;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    box-shadow: 2px 1px 10px #d6d3d3;
+
+}
+
+.footer-section h3 {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 25px;
    
 }
-.btn{
-    margin: 20px 5px;
-    background-color: transparent;
-    border:2px solid white;
-   
+
+.footer-section li {
+    font-size: 16px;
+    color: #7e7b7b;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.privacy{
+    margin-left: 40px;
+    align-items: center;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    
+
+}
+
+.privacy i{
+    margin:30px 0px;
+    font-size: 30px;
+}
+.privacy li{
+    color: #000;
+}
+
+.privacy p{
+    color: rgb(83, 82, 82);
 }
