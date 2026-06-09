@@ -445,10 +445,12 @@ h3 {
     color: black;
 }
 
-.pricing-container .basic-card button {
-    background-color: black;
-    margin: 20px 130px;
-    padding: 15px 40px;
+.pricing-container .basic-card  button {
+     padding: 15px 30px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(12, 12, 12);
     color: white;
 
 }

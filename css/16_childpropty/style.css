@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    width:90%;
+    height: 400px;
+    margin: 0px auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content:space-evenly; */
+    
+    gap:10px;
+}
+.box-1{
+    flex:1 2 100px;
+    /* width: 200px; */
+    height: 150px;
+    background-color: brown;
+    
+
+   
+}
+/* .box-4{
+    width: 200px;
+   
+    background-color: brown;
+    align-self: stretch;
+}
+.box-1:nth-child(1){
+    flex-grow:3;
+    flex-shrink:5;
+    align-self: flex-start;
+}
+.box-1:nth-child(2){
+  
+    align-self:center;
+}
+.box-1:nth-child(3){
+  
+    align-self:flex-end;
+}
+.box-1:nth-child(4){
+  
+    align-self:stretch;
+} */

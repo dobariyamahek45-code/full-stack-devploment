@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-1 {
+    width: 8.33%;
+    padding: 0px 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding: 0px 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 0px 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    padding: 0px 15px;
+}
+
+.col-6 {
+
+    width: 50%;
+    /* padding: 0px 15px;*/
+}
+
+.col-7 {
+    width: 58.33%;
+    padding: 0px 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    padding: 0px 15px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0px 15px;
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0px 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    padding: 0px 15px;
+}
+
+.col-12 {
+    width: 100%;
+    /* padding: 0px 15px; */
+}
+
+.ailgn-items-center {
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    
+    padding: 30px 0px;
+    background-color:transparent;
+    border-bottom: 3px solid #ffffff33;
+    z-index: 1030;
+    position:fixed;
+}
+
+
+header .menu-section {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-section ul {
+    display: flex;
+    gap: 30px;
+}
+
+header .menu-section ul li a {
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .menu-section ul li a:hover {
+    color: yellow;
+}
+
+header .icons {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+header .icons i {
+    font-size: 25px;
+    background-color: transparent;
+    color: gray;
+}
+
+header .icons i:hover {
+    color: yellow;
+}
+
+/* hero section */
+.hero {
+    background: url("../image/background.webp")no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    background-position: center;
+    align-items:center;
+    justify-content:center;
+    background-attachment: scroll;
+
+}
+
+.hero .hero-text h1 {
+     color: #fff;
+    font-size: 70px;
+    line-height: 1.2;
+    margin-bottom:50px;
+}
+.hero .hero-text p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.hero .hero-text button{
+    padding: 20px 35px;
+    font-size:16px;
+    background-color: #fdc657;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* Service section */
+.Service {
+    margin-top: 70px;
+    margin: 0px auto;
+}

@@ -7,7 +7,7 @@
 
 .container {
     width: 90%;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 
 }
 
@@ -54,7 +54,7 @@ a {
 .col-6 {
 
     width: 50%;
-    /* padding: 0px 15px;*/
+   
 } 
 
 .col-7 {
@@ -92,91 +92,153 @@ a {
 }
 
 /* menu section */
-header{
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+   width: 90%;
+   margin: 0px auto;
    
-    padding: 15px 0px;
 }
-
-header .menu {
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
     display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.33%;
+    padding:0px 15px;
+}
+.col-2{
+    width: 16.66%;
+    padding:0px 15px;
+}
+.col-3{
+    width: 25%;
+    padding:0px 15px;
+}
+.col-4{
+    width: 33.33%;
+    padding:0px 15px;
+}
+.col-5{
+    width: 41.66%;
+    padding:0px 15px;
+}
+.col-6{
+    width: 50%;
+    
+   
+}
+.col-7{
+    width: 58.33%;
+    padding:0px 15px;
+}
+.col-8{
+    width: 66.66%;
+    padding:0px 15px;
+}
+.col-9{
+    width: 75%;
+    padding:0px 15px;
+}
+.col-10{
+    width: 83.33%;
+    padding:0px 15px;
+}
+.col-11{
+    width: 91.66%;
+    padding:0px 15px;
+}
+.col-12{
+    width: 100%;
+    padding:0px 15px;
+}
+li{
+    list-style: none;
+}
+/* header section */
+.menu{
     align-items: center;
-    gap: 10px
-}
-
-header .menu ul {
     display: flex;
+    background-color: #ffffff;
+}
+header .menu ul{
+    display:flex;
+    align-items: center;
 
 }
-
-header .menu ul li a {
-    margin: 0px 15px;
-    font-size: 15px;
+header .menu ul li a{
     color: black;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+header .menu ul li a:hover{
+    color:green;
+   
 }
 
-.menu ul li a:hover {
-    color: #0c7b54;
-}
-
-.signin {
+/*signin section*/
+.signin{
     display: flex;
-    align-items: center;
+    align-items:center;
+    margin-left: auto;
     justify-content: flex-end;
-
+    padding: 20px 0px;
 }
-
-.signin ul {
-    display: flex;
+.signin a:hover{
+    color:green;
 }
-
-.signin ul li {
+.signin i:hover{
+    color:green;
+}
+.signin i{
+    color:black;
+    font-size: 25px;
     margin: 0px 10px;
 }
-
-.signin ul li a {
-    margin-right: 30px;
-    font-size: 18px;
+.signin ul{
+    display: flex;
+}
+.signin ul li{
+    margin: 20px 20px;
+}
+.signin ul li a{
     color: black;
-
-
-}
-
-.signin ul li a:hover {
-    color: #0c7b54;
-}
-
-.signin ul li a i {
-    margin-right: 5px;
-    font-size: 20px;
-}
-
-.signinbtn {
-    background: transparent;
-    border: 1px solid #000;
-    font-size: 15px;
-    padding: 9px 18px;
-    border-radius: 20px;
-    cursor: pointer;
+    font-size: 14px;
     font-weight: 600;
 }
-
-
-.joinnow {
-    background: black;
-    font-size: 15px;
-    border: 1px solid #000;
-    padding: 9px 18px;
+/* buttons */
+.signin button {
+    padding: 8px 18px;
     border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+}
+.signin .signinbtn {
+    background-color: white;
+    border:1px solid black;
+    color: black;
+}
+.signin .signinbtn:hover{
+    color:gainsboro;
+}
+.signin .joinnowbtn{
+    background-color: black;
     color: white;
 }
-
-.signinbtn:hover {
-    background-color: #f5f5f5;
+.signin .joinnowbtn:hover{
+    color:gray;
 }
 
 
@@ -226,7 +288,7 @@ header .menu ul li a {
 
     justify-content: center;
     align-items: center;
-    padding: 30px 45px;
+    padding: 40px 45px;
 
 }
 
@@ -274,16 +336,17 @@ header .menu ul li a {
 .summer-contant {
     justify-content: center;
     align-items: center;
-    padding: 50px 45px;
+    padding:40px 45px;
 
 }
 
 .summer-contant h2 {
+    margin-top: 20px;
     text-align: center;
     color: white;
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .summer-contant p {
@@ -291,12 +354,11 @@ header .menu ul li a {
     color: white;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 25px;
+  
     line-height: 1.75;
 }
 
 .summer-contant .btn {
-    text-align: center;
     font-size: 18px;
     font-weight: 600;
     color: rgb(40, 119, 53);
@@ -304,11 +366,17 @@ header .menu ul li a {
     border: 2px solid white;
     border-radius: 30px;
     padding: 5px 10px;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .summer-image .btn:hover {
     background-color: #eff5f3;
+}
+
+.summer-image{
+    justify-content: flex-end;
+    margin: 0px auto;
+    
 }
 
 /* pickup section */
@@ -323,15 +391,17 @@ header .menu ul li a {
 
     justify-content: center;
     align-items: center;
-    padding: 50px 45px;
+    padding:56px 45px ;
+   
 }
 
 .pickup-contant h2 {
+    margin-top: 20px;
     text-align: center;
     color: white;
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom:40px;
 }
 
 .pickup-contant p {
@@ -339,8 +409,7 @@ header .menu ul li a {
     color: white;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 25px;
-    line-height: 1.75;
+   line-height: 1.75;
 }
 
 .pickup-contant .btn {
@@ -352,7 +421,7 @@ header .menu ul li a {
     border: 2px solid white;
     border-radius: 30px;
     padding: 5px 10px;
-    margin: 30px 0px;
+    margin: 40px 0px;
 }
 
 /* Unicorn section */
@@ -439,9 +508,11 @@ header .menu ul li a {
     font-size: 30px;
 }
 .privacy li{
+    margin-top: 10px;
     color: #000;
 }
 
 .privacy p{
     color: rgb(83, 82, 82);
+    margin-top:20px;
 }
