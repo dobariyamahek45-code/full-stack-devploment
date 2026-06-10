@@ -5,12 +5,12 @@
 }
 
 .container {
-    width: 90%;
+    width: 100%;
 
 }
 
 header {
-    background-color: ffffff;
+    background-color: #ffffff;
     height: 70px;
 }
 
@@ -90,6 +90,7 @@ header .logo h1 {
 }
 
 .menu {
+   
     margin: 10px;
     padding: 20px 10px;
     margin-right: 50px;
@@ -393,12 +394,13 @@ h3 {
 }
 
 /* PRICING section */
+
 .pricing-container {
     background-color: #616161;
     width: 100%;
     height: 950px;
-    padding-top: 10px;
-    padding-left: 25px;
+   padding: 0px 30px;
+     
     float: left;
 }
 
@@ -415,18 +417,18 @@ h3 {
     font-size: 1.3rem;
     font-weight: 100;
 }
-
+    /* basic-card */
 .pricing-container .basic-card {
     color: #f1f1f1;
     height: 510px;
     width: 400px;
     margin-top: 90px;
     float: left;
-    border: 1px solid white;
+    
 
 }
 
-.pricing-container .basic-card h6 {
+.pricing-container .basic-card h5 {
     font-size: 25px;
     text-align: center;
     padding: 20px 20px;
@@ -440,33 +442,39 @@ h3 {
     padding-top: 16px;
     padding-bottom: 16px;
     line-height: 1.3;
-    background-color: white;
     text-align: center;
+    background-color: white;
     color: black;
 }
-
-.pricing-container .basic-card  button {
-     padding: 15px 30px;
-    margin-top: 10px;
-    border: none;
-    font-size: 17px;
-    background-color: rgb(12, 12, 12);
+.pricing-container .basic-card .para {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 1.9;
+    padding: 5px;
+    font-weight: 500;
+}
+.pricing-container .basic-card .btn{
+    background-color: #f1f1f1;
+}
+.pricing-container .basic-card button {
+    background-color: black;
+    margin: 21px 130px;
+    padding: 15px 40px;
     color: white;
 
 }
-        /* basic-card1 section */
+    /* basic-card1 section */
 
 .pricing-container .basic-card1 {
     color: white;
     height: 565px;
     width: 400px;
     margin-top: 55px;
-    margin-bottom: 90px;
-    border: 1px solid;
-    float: left;
+   float: left;
 }
 
-.pricing-container .basic-card1 h6 {
+.pricing-container .basic-card1 h5 {
     font-size: 25px;
     text-align: center;
     padding: 20px 20px;
@@ -484,15 +492,26 @@ h3 {
     color: black;
     line-height: 1.5;
 }
-
+.pricing-container .basic-card1 .para {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 1.9;
+    padding: 5px;
+    font-weight: 500;
+}
+.pricing-container .basic-card1 .btn{
+    background-color: #f1f1f1;
+}
 .pricing-container .basic-card1 button {
     background-color: black;
-    margin: 20px 130px;
+    margin: 22px 130px;
     padding: 15px 40px;
     color: white;
 
 
 }
+
 
     /* basic-card2 section */
 
@@ -502,14 +521,15 @@ h3 {
     width: 400px;
     margin-top: 90px;
     float: left;
-    border: 1px solid white;
+    
 
 }
 
-.pricing-container .basic-card2 h6 {
+.pricing-container .basic-card2 h5 {
     font-size: 25px;
     text-align: center;
     padding: 20px 20px;
+   
     font-weight: 100;
     background-color: black;
     height: 80px;
@@ -519,15 +539,25 @@ h3 {
 .pricing-container .basic-card2 p {
     padding-top: 16px;
     padding-bottom: 16px;
-     line-height: 1.3;
-     text-align: center;
+    line-height: 1.3;
+    text-align: center;
     background-color: white;
     color: black;
 }
-
+.pricing-container .basic-card2 .para {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 1.9;
+    padding: 5px;
+    font-weight: 500;
+}
+.pricing-container .basic-card2 .btn{
+    background-color: #f1f1f1;
+}
 .pricing-container .basic-card2 button {
     background-color: black;
-    margin: 20px 130px;
+    margin: 21px 130px;
     padding: 15px 40px;
     color: white;
 
@@ -536,10 +566,13 @@ h3 {
 /* contact section */
 .contact-container{
     width:100%;
+   
     background:#f1f1f1;
-    padding:60px 25px;
+    padding:5px 25px;
 }
 .contact-container h3 {
+   
+    padding: 20px 0px;
     color: black;
     text-align: center;
     font-size: 1.6rem;
