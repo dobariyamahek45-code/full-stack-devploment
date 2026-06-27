@@ -1,0 +1,272 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+     font-family: "Lato", sans-serif;
+}
+.container {
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-1 {
+    width: 8.33%;
+    padding: 0px 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding: 0px 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0px 15px;
+
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 0px 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    padding: 0px 15px;
+}
+
+.col-6 {
+    width: 50%;
+    
+}
+
+.col-7 {
+    width: 58.33%;
+    padding: 0px 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    padding: 0px 15px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0px 15px;
+
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0px 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    padding: 0px 15px;
+}
+
+.col-12 {
+    width: 100%;
+    
+}
+.align-item-center{
+    align-items: center;
+}
+/* header{
+    width: 100%;
+    position: fixed;
+} */
+header .menu{
+   background-color: #f44336;
+   box-shadow: 0 2px 5px 0 #00000029;
+}
+
+header .menu ul{
+    display: flex;
+    
+}
+header .menu ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+header .menu ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+/* hero */
+.hero{
+    padding: 120px 16px;
+    background-color: #f44336;
+}
+.hero .hero-contant{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .hero-contant h1{
+    margin: 16px;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.hero .hero-contant p{
+    margin: 24px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+.hero .hero-contant a{
+    display: block;
+    background-color: black;
+    margin: 15px 0px;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+}
+.hero .hero-contant a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+/* first-grid */
+.first-grid{
+   padding: 64px 20px;
+}
+
+.first-grid .first-contant h2{
+    margin: 10px 0px;
+    font-size:36px;
+    font-weight:500;
+}
+.first-grid .first-contant h6{
+    margin: 10px 0px;
+    padding: 32px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2;
+}
+
+.first-grid .first-contant p{
+    margin: 15px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+}
+.first-grid .first-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.first-grid .first-image i{
+    font-size: 200px;
+    text-align: center;
+    color: #f44336;
+}
+
+/* second-grid */
+.second-grid{
+   padding: 64px 20px;
+   background-color: #f1f1f1;
+}
+.second-grid .second-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.second-grid .second-image i{
+    font-size: 200px;
+    text-align: center;
+    color: #f44336;
+}
+
+.second-grid .second-contant h2{
+    margin: 10px 0px;
+    font-size:36px;
+    font-weight:500;
+}
+.second-grid .second-contant h6{
+    margin: 10px 0px;
+    padding: 32px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2;
+}
+
+.second-grid .second-contant p{
+    margin: 15px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+}
+/* live-section */
+.live-section{
+    padding:64px 16px;
+    background-color: gray;
+}
+.live-section .live-contant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.live-section .live-contant p{
+    color: #fff;
+    font-size: 22px;
+}
+/* footer section */
+.footer-section{
+    padding: 64px 16px;
+}
+.footer-section .icons{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .icons a i{
+  
+    font-size: 24px;
+    color:#000000;
+}
+.footer-section .icons a i:hover{
+    color: #818080;
+}
+.footer-section .link-section{
+     margin: 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .link-section p{
+   color: #818080;
+    
+}
+.footer-section .link-section a{
+    color: #818080;
+    text-decoration: underline;
+}

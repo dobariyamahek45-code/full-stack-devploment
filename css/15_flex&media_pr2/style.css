@@ -1,0 +1,346 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-1 {
+    width: 8.33%;
+    padding: 0px 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding: 0px 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 10px 10px;
+
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 0px 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    padding: 0px 15px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.col-7 {
+    width: 58.33%;
+    padding: 0px 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    padding: 0px 15px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0px 15px;
+
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0px 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    padding: 0px 15px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.ailgn-items-center {
+    align-items: center;
+}
+
+header {
+   
+    padding:14px 16px;
+    box-shadow: 0 2px 5px 0 #00000029;
+}
+header .logo a{
+    padding: 8px 16px;
+    
+}
+header .logo  b{
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing:5px;
+}
+header .logo span{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing:4px;
+}
+header .logo a:hover{
+    color:#000;
+    background-color: #ccc;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu ul li a{
+    font-size:18px;
+    padding: 8px 16px;
+    color: #000;
+}
+.menu ul li a:hover{
+    background-color: #ccc;
+}
+
+/* hero section */
+.hero .image-section{
+    position: relative;
+    margin: 0px 10px;
+}
+.hero .image-section img{
+    width: 100%;
+    height: auto;
+}
+/* Center Text */
+.hero-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    left: 40%;
+    /* transform: translate(-50%, -50%); */
+    gap: 15px;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 4px;
+    /* margin: 10px 0px; */
+}
+
+.logo-box {
+    background: #000000b3;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-weight: 300;
+}
+
+/* project section */
+.project-section{
+    padding: 32px 20px;
+}
+.project-section h2{
+    margin: 10px 10px;
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+.image-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    
+   
+}
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    z-index: 2;
+}
+/* about section */
+.about-contant{
+    padding: 32px 16px;
+}
+.about-contant h2{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+.about-section p {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
+}
+
+.row-padding{
+    display: flex;
+    padding: 0px 15px;
+}
+.card-contant img {
+    filter: grayscale(75%);
+    width: 100%;
+}
+
+.card-contant h3 {
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+    margin: 10px 0px;
+
+}
+
+.card-contant font {
+    font-size: 18px;
+    color: #3c3c3c;
+    font-weight: 400;
+    margin: 15px 0px;
+
+}
+
+ .card-contant p {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    margin: 15px 0px;
+    line-height: 1.5;
+
+}
+
+.card-contant button {
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-contant button:hover {
+    background-color: #bcbcbc;
+}
+
+/* contact section */
+.contact-contant{
+    padding: 32px 16px;
+}
+.contact-contant h2{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+.contact-contant p {
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
+}
+.form-section {
+    margin: 0px 20px;
+    width: 98%;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+
+}
+
+.form-section input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.form-section button {
+   padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.form-section button:hover {
+    background-color: #cdcbcb;
+    color: black;
+}
+
+.location-image img {
+    margin-top: 30px;
+    width: 100%;
+   
+}
+/* footer-section */
+.footer-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+    
+
+}
+.footer-section p{
+    padding: 16px 0px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: underline;
+}

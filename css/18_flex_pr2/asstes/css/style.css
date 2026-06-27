@@ -30,7 +30,7 @@ a {
 
 .col-1 {
     width: 8.33%;
-    padding: 0px 15px;
+    
 }
 
 .col-2 {
@@ -75,7 +75,7 @@ a {
 
 .col-10 {
     width: 83.33%;
-    padding: 0px 15px;
+   
 }
 
 .col-11 {
@@ -93,62 +93,73 @@ a {
 }
 /*  header section */
 header {
-    position: fixed;
+    /* position: fixed;
     width: 100%;
-    top: 0px;
-    padding: 10px 0px;
+    top: 0px; */
+    
     background-color: #4d636f;
 
 }
-
+.logo{
+    padding: 14px 0px;
+}
 .logo i {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     margin-right: 10px;
 
 }
 
 .header .logo {
-    background-color:#3a4b53;
+   
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+header .logo{
+    background-color: #435761;
+}
 header .logo h1 {
     color: white;
     font-size: 25px;
     font-weight: 500;
 }
-
+header .logo:hover{
+    background-color: #cccdce;
+    color: black;
+}
 header .icons {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
+    
 
 
 }
-
 .icons a {
-    margin-right: 10px;
+    padding: 17px 24px;
     color: rgb(249, 249, 249);
     font-size: 20px;
     align-self: center;
 }
-
+.icons a:hover{
+    background-color: #f6f7f8;
+    color: black;
+}
 
 header .pro-img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
+header .pro-img a{
+    padding: 15px 24px;
+}
 header .pro-img img {
-    border-radius: 40px;
+   border-radius: 40px;
 }
 .left,.main,.right{
-   margin-top: 100px;
+   margin-top: 40px;
 }
     
    
