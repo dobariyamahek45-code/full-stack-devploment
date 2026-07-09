@@ -130,8 +130,99 @@ a {
     border: none;
     border-radius: 20px;
     font-weight: 500;
-    color: #198754;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
 }
 .energy-section .energy-contant button:hover{
-    background-color: #dcd9d9;
+    background-color:darkgreen;
+}
+
+
+/* smith-section  */
+.smith-section  .smith-contant h2{
+    font-size:26px;
+    letter-spacing: 2px;
+}
+.smith-section .smith-contant p{
+    font-size: 19px;
+    line-height: 1.7;
+}
+.smith-section .smith-contant button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+
+
+/* product-section */
+.product-section .product-contant p{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    
+}
+
+/* purchase-section */
+.purchase-section .purchase-contant p{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.8;
+    
+}
+.purchase-section .purchase-contant a{
+     font-size: 14px;
+    color: black;
+    font-weight: 400;
+    
+    text-decoration: underline;
+}
+
+
+/* footer section */
+.footer-section{
+    box-shadow: 0 -1px 3px #0000001a;
+}
+
+.footer-section h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: black;
+   
+}
+
+.footer-section li {
+    font-size: 16px;
+    color: #00000094;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.footer-section li:hover{
+    color: #070404;
+}
+.privacy{
+   
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+.privacy i{
+    margin:30px 0px;
+    font-size: 30px;
+}
+.privacy li{
+    margin-top: 10px;
+    color: #000;
+}
+
+.privacy p{
+    color: rgb(83, 82, 82);
+    margin-top:20px;
 }
