@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asstes/css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white d-flex flex-wrap">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blogy.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+
+                </ul>
+                <form class="position-relative" role="search">
+                    <input class="form-control" type="search" placeholder="Search.." aria-label="Search" />
+                    <i
+                        class="search position-absolute top-50 end-0 translate-middle-y  me-3  fa-solid fa-magnifying-glass"></i>
+
+
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="menu-contant bg-body-tertiary">
+                        <ul class="nav justify-content-center py-3 mb-5">
+                            <li class="nav-item">
+                                <a style="color:orangered;" class="nav-link active fs-6" aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 text-black" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 text-black" href="#">Category</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 text-black" href="#">Blog Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 text-black" href="#">Author Profile</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a style="color:orangered;" class="nav-link dropdown-toggle fs-6"
+                                    data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                    <li><a class="dropdown-item" href="#">Category</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Author Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Search Results</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Not Found Page</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button" aria-expanded="false">Deep Dropdown</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6 text-black" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Left Large Card -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ">
+
+                    <div class="blog-card position-relative">
+                        <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp" alt=""
+                            class="img-fluid rounded-4">
+                        <div class="blog-content position-absolute Left-20 bottom-0 text-white fw-semibold ms-3">
+                            <p>Apr. 14th, 2025 : Technology</p>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!---- Right Small Card -->
+                <div class="col-lg-4">
+                    <div class="blog-card position-relative">
+                        <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-portrait-1.webp"
+                            class="img-fluid rounded-4" alt="">
+                        <div class="blog-content position-absolute Left-20 bottom-0 text-white fw-semibold ms-3">
+                            <p>Apr. 14th, 2025 : Security</p>
+                            <h2>Sed do eiusmod tempor <br /> incididunt ut labore</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card second row -->
+                <div class="col-lg-4  ">
+                    <div class="blog-card position-relative mt-4 text-opacity-50">
+                        <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-9.webp" alt=""
+                            class="img-fluid rounded-4">
+                        <div class="blog-content position-absolute Left-20 bottom-0 text-white fw-semibold ms-3">
+                            <p>Apr. 14th, 2025 : Career</p>
+                            <h2>Ut enim ad minim veniam,<br /> quis nostrud exercitation</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <div class="blog-card position-relative  mt-4 text-opacity-50">
+                        <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-7.webp" alt=""
+                            class="img-fluid rounded-4">
+                        <div class="blog-content position-absolute Left-20 bottom-0 text-white fw-semibold ms-3">
+                            <p>Apr. 14th, 2025 : Cloud</p>
+                            <h2>Adipiscing elit, sed do <br /> eiusmod tempor incididunt</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="blog-card position-relative mt-4 text-opacity-25">
+                        <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-6.webp" alt=""
+                            class="img-fluid rounded-4">
+                        <div class="blog-content position-absolute Left-20 bottom-0 text-white fw-semibold ms-3">
+                            <p>Apr. 14th, 2025 : Programming</p>
+                            <h2>Excepteur sint occaecat <br />cupidatat non proident</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Featured section -->
+        <section class="featured-section">
+            <div class="container">
+
+                <div class="title-section mt-5">
+                    <h2 class="fs-5 text-black-50 fw-normal">Featured Posts</h2>
+                    <p class="fs-3 text-primary-emphasis">Check Our Featured Posts</p>
+                </div>
+                <div class="row card-section">
+                    <div class="col-lg-4">
+                        <div class="card-image position-relative">
+                            <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-portrait-5.webp"
+                                alt="" class="img-fluid rounded-4">
+                            <div class="card-content position-absolute  ms-3">
+                                <span class="text-white"> <i class="fa-regular fa-user me-2"></i>Mark Wilson</span>
+                                <span class="text-white"> <i class="fa-regular fa-clock me-2"></i>Jan 18, 2025</span><br />
+                                <span class="text-white "> <i class="fa-regular fa-comment-dots me-2 mb-2"></i>6 Comments</span>
+                                <h2 class="fs-5 text-white">Sed ut perspiciatis unde omnis <br />iste natus error sit voluptatem</h2>
+                                <p>Maecenas tempus tellus eget condimentum rhoncus sem <br />quam semper libero sit amet
+                                    adipiscing
+                                    sem neque sed ipsum.</p>
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card-image">
+                            <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-portrait-3.webp"
+                                alt="" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card-image">
+                            <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-portrait-4.webp"
+                                alt="" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <script src="./asstes/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

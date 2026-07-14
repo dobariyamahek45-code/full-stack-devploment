@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navbar section */
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: #2d465e;
+    font-weight: 400;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #f75815;
+}
+
+.search:hover {
+    color: #f75815;
+}
+
+/*blog-section */
+.blog-card img {
+    object-fit:contain;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.blog-card img:hover {
+    transform: scale(1.05);
+}
+.card-section{
+
+}
+.card-content {
+     left: 20px;
+    bottom: 20px;
+}

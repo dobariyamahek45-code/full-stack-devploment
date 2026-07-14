@@ -1,0 +1,228 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* header section */
+.navbar .nav-link{
+    color: black;
+    font-weight: 600;
+}
+.navbar .nav-link:hover{
+    color:#198754;
+}
+.signin ul li {
+    margin: 0px 5px;
+}
+.signin ul li a{
+    color:black;
+    font-weight: 600;
+}
+.signin .signinbtn{
+    padding: 4px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.signin .joinnow{
+    padding: 4px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/* order section */
+.order-section .order-contant p{
+    font-size: 20px;
+}
+.order-section .order-contant button{
+     background-color: transparent;
+    border-radius: 25px;
+    font-size: 18px;
+    border: 2px solid white;
+    color: #ffffff;
+    margin: 2px;
+    padding: 2px 12px;
+    transition: 0.5s;
+}
+.order-section .order-contant button:hover{
+    background-color: #198754;
+}
+/* officially section */
+.officially-section  .officially-contant h2{
+    font-size:36px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.officially-section .officially-contant p{
+    font-size: 24px;
+    line-height: 1.5;
+}
+.officially-section .officially-contant button{
+    padding: 6px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    color: #198754;
+}
+.officially-section .officially-contant button:hover{
+    background-color: #dcd9d9;
+}
+
+/* connects-section  */
+.connects-section  .connects-contant h2{
+    font-size:24px;
+    letter-spacing: 2px;
+}
+.connects-section .connects-contant p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* summer-section  */
+.summer-section  .summer-contant h2{
+    font-size:26px;
+    letter-spacing: 2px;
+}
+.summer-section .summer-contant p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+.summer-section .summer-contant button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #198754;
+}
+.summer-section .summer-contant button:hover{
+    background-color: #dcd9d9;
+}
+
+
+/* energy-section  */
+.energy-section  .energy-contant h2{
+    font-size:26px;
+    letter-spacing: 2px;
+}
+.energy-section .energy-contant p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+.energy-section .energy-contant button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.energy-section .energy-contant button:hover{
+    background-color:darkgreen;
+}
+
+
+/* smith-section  */
+.smith-section  .smith-contant h2{
+    font-size:26px;
+    letter-spacing: 2px;
+}
+.smith-section .smith-contant p{
+    font-size: 19px;
+    line-height: 1.7;
+}
+.smith-section .smith-contant button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+
+
+/* product-section */
+.product-section .product-contant p{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    
+}
+
+/* purchase-section */
+.purchase-section .purchase-contant p{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.8;
+    
+}
+.purchase-section .purchase-contant a{
+     font-size: 14px;
+    color: black;
+    font-weight: 400;
+    
+    text-decoration: underline;
+}
+
+
+/* footer section */
+.footer-section{
+    box-shadow: 0 -1px 3px #0000001a;
+}
+
+.footer-section h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: black;
+   
+}
+
+.footer-section li {
+    font-size: 16px;
+    color: #00000094;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.footer-section li:hover{
+    color: #070404;
+}
+.privacy{
+   
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+.privacy i{
+    margin:30px 0px;
+    font-size: 30px;
+}
+.privacy li{
+    margin-top: 10px;
+    color: #000;
+}
+
+.privacy p{
+    color: rgb(83, 82, 82);
+    margin-top:20px;
+}
