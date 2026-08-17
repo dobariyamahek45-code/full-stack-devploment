@@ -43,10 +43,21 @@ a {
 .blog-card img:hover {
     transform: scale(1.05);
 }
-.card-section{
 
-}
+/* card section */
+/* .card-section .card-image  img{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%);
+} */
 .card-content {
-     left: 20px;
     bottom: 20px;
+}
+
+/* catogery section */
+.category-section .card-body .category-text:hover{
+    color: #ff6a00 !important;
+}
+
+/* revolutionize section */
+.revolutionize-section{
+    background-color: #f2eae6;
 }
