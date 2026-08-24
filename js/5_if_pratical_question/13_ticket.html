@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=Number(prompt("enter your age"))
+        if(age<5){
+            document.write(`ticket price free:-`)
+        }else if (age >= 5 && age <= 12) {
+            document.write("Ticket Price = ₹50");
+        } else if (age >= 13 && age <= 60) {
+            document.write("Ticket Price = ₹100");
+        } else {
+            document.write("Ticket Price = ₹70");
+        }
+    </script>
+</body>
+</html>
