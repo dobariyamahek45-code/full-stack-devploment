@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //no argument no return
+        // function sum(){
+        //     let a=10,b=15;
+        //     document.write(`<h1>${a+b}</h1>`);
+        // }
+        // sum();
+        // sum();
+
+        //with argument no return
+        // function sum(a,b){
+        //     document.write(`<h1>${a+b}</h1>`);
+        // }
+        // sum(10,58);
+        // sum(20,20);
+
+        //no argument with  return
+        // function sum(){
+        //     let a=34,b=10;
+        //     return a+b;
+        // }
+        // let ans=sum()
+        // document.write(`<h1>${ans}</h1>`)
+
+        //with argument no return
+        // function sum(a,b){
+        //     return a+b;
+        // }
+        // let ans=sum(10,20)
+        // document.write(`<h1>${ans}</h1>`)
+
+
+        // local variable
+        // function hello(){
+        //     let x=10; 
+        //      document.write(x);
+        // }hello();
+
+         //Anonymous Function
+        //  const checkage=function(){
+        //     let age=16;
+        //     if(age >=18){
+        //         document.write(`<h1>you can vote</h1>`)
+        //     }else{
+        //         document.write(`<h1>you can not vote</h1>`)
+        //     }
+        //  }
+        //  checkage()
+
+         //Immediately Invoked Function Expression (IIFE)
+        //  (function(){
+        //     document.write(`hello`);
+        //  })();
+
+        //no return no argument
+        // (function(){
+        //     let a=10,b=20;
+        //     document.write(`<h1>${a+b}</h1>`)
+        // })();
+
+        //return with argument
+        // const res = (function(r){
+        //         return 3.14 * r * r;
+        //     })(4)
+        //    document.write(`circle radius :- ${res}`);
+
+         // Constructor Function
+         const person=function(name,age){
+            this.name=name;
+            this.age=age;
+         }
+         let user = new Person("mahek",20);
+           document.write(user.name);
+        document.write(user.age);
+    </script>
+    
+</body>
+</html>
