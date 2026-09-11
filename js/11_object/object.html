@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h2 id="name">name:-</h2>
+
     <script>
-        let person={
+        // Use object
+           let person={
             name:"mahek",
             age:20,
             city:"surat"
-        }
-        //modify object
-        // person.name="devyani"
+           };
 
-        //delete object
-        //delete person.age
+        //    console.log(person);
 
-        //console.log(person);
-        // document.write(person)
+        //1. Dot Notation
+        //    console.log(person.name);
+        //    console.log(person.age);
+        //    console.log(person.city);
+
+        //2. Bracket Notation
+        // console.log(person["name"]);
+        // console.log(person["age"]);
+        // console.log(person[city]);//error
+
+        //Why Bracket Notation Exists
+        // let key = "age";
+        // console.log(person[key]);
+
+        //Changing Object Values
+
+        // person.name="mahi";
+        // console.log(person.name);
+
+        //Adding New Properties
+        // person.country="india";
+        // console.log(person);
+
+        //Removing Properties
+        // delete person.age;
+        // console.log(person);
+
+        //Object Methods
+        // let student={
+        //    name:"mahi",
+        //    age:12,
+
+        //    result:function(){
+        //         console.log(person);
+                
+        //    }
+        // };
+        // student.result();
+
+        //this Keyword
+        // let student={
+        //    name:"mahi",
+        //    age:12,
+
+        //    result:function(){
+        //         console.log(" hello " + this.name);
+                
+        //    }
+        // };
+        // student.result();
+
+
         
+        
+        
+
+        
+           
+
+
     </script>
 </body>
+
 </html>
