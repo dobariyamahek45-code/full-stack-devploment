@@ -7,7 +7,7 @@ export const arr=["apple","banana","kiwi"];
 
 export const pi=3.14;
 
-export function greet(){
+export default function greet(){
     console.log( "hello world");
 }
 

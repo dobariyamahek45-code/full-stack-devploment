@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div align="center"> 
+
+    <h1>add list</h1> 
+
+    <p> 
+        <label>name:-</label> 
+        <input type="text" id="name" placeholder="enter your name"> 
+    </p> 
+
+    <p> 
+        <label>age:-</label> 
+        <input type="text" id="age" placeholder="enter your age"> 
+    </p> 
+
+    <p> 
+        <button id="btn" onclick="addlist()">submit</button> 
+    </p> 
+
+    <hr> 
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="list">
+        </tbody>
+    </table>
+    <hr>
+    <button onclick="deleteItem()">Delete</button>
+
+
+</div> 
+
+
+
+<script> 
+
+    const addlist = () => { 
+
+        let name = document.getElementById("name").value;
+
+         if (name === "") {
+            alert("Please enter your name");
+            return;
+        }
+
+        let tr = document.createElement("tr");
+       
+       let tdName = document.createElement("td");
+       tdName.innerText = name;
+         let button = document.createElement('button');
+        button.innerHTML = "Delete Item";
+
+        button.onclick = () => {
+            tr.remove();
+        };
+
+        
+        tr.appendChild(tdName);
+        tr.appendChild(button);
+        document.getElementById("list").appendChild(tr);
+        document.getElementById('name').value = "";
+
+
+
+         let age = document.getElementById("age").value;
+
+         if (age === "") {
+            alert("Please enter your age");
+            return;
+        }
+
+        let tr1 = document.createElement("tr");
+       
+       let tdage = document.createElement("td");
+       tdage.innerText = age;
+         let button1 = document.createElement('button');
+        button.innerHTML = "Delete Item";
+
+        button.onclick = () => {
+            tr.remove();
+        };
+
+        
+        tr.appendChild(tdage);
+        tr.appendChild(button);
+        document.getElementById("list").appendChild(tr);
+        document.getElementById('age').value = "";
+
+
+       
+    }
+
+    const deleteItem = () => {
+            document.getElementById('list').remove();
+        }
+
+</script>
+
+
+
+   </body>
+   </html>
