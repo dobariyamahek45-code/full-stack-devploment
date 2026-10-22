@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(name,callback){
+        //     console.log("hello " + name);
+        //     callback();
+        // }
+        // function sayby(){
+        //     console.log("good bye");
+            
+        // }
+        // greet("mahek",sayby)
+
+
+        //Callback with setTimeout()
+        // setTimeout(function () {
+        // console.log("Executed after 2 seconds");
+        // }, 2000);
+
+
+
+        //Callback Hell
+        // function login(callback){
+        //     setTimeout(function (){
+        //         console.log("user logged in");
+        //         callback();
+        //     },1000)
+        // }
+
+        // function getprofile(callback){
+        //     setTimeout(function() {
+        //         console.log("profile loaded");
+        //         callback();
+        //     }, 1000);
+        // }
+
+        // function getorder(callback){
+        //     setTimeout(function() {
+        //         console.log("get order");
+        //         callback();
+        //     }, 1000);
+        // }
+
+        // function getpayment(callback){
+        //     setTimeout(function() {
+        //         console.log("payment successully");
+        //         callback();
+        //     }, 1000);
+        // }
+
+
+
+        // login(function(){
+        //     getprofile(function(){
+        //         getorder(function(){
+        //             getpayment(function(){
+        //                 console.log("payment complted");
+                        
+        //             });
+
+        //         });
+        //     });
+        // });
+
+
+        //Promise
+        let Promise = new promise(function(res,rev){
+
+            let success = true;
+            if(success){
+                console.log("data loaded");
+                
+            }else{
+                console.log("data not loaded");
+                
+            }
+        })
+
+    
+        .then(function(result){
+        console.log(result);
+        })
+        .catch(function(error){
+        console.log(error);
+        });
+    </script>
+</body>
+</html>

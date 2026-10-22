@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Form Validation</h1>
+        <form>
+            <p>
+                <label for="name">Name :- </label>
+                <input type="text" id="name" placeholder="Enter name">
+                <span id="nameError"></span>
+            </p>
+
+            <p>
+                <label for="email">Email :- </label>
+                <input type="text" id="email" placeholder="Enter email">
+                <span id="emailError"></span>
+            </p>
+
+             <p>
+                <label for="password">Password :- </label>
+                <input type="text" id="password" placeholder="Enter password">
+                <span id="passwordError"></span>
+            </p>
+
+            <p>
+                <input type="button" onclick="submitButton()" value="submit">
+            </p>
+            
+        </form>
+
+    </div>
+    <script>
+        const submitButton = () => {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            
+            
+           
+            if(name === ""){
+                let nameError = document.getElementById('nameError');
+                nameError.innerText = "Name is Required";
+                nameError.style.color="red";
+                
+            }
+
+            if(email === ""){
+                let emailError = document.getElementById('emailError');
+                emailError.innerText = "Email is Required";
+                emailError.style.color="red";
+            }else{
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailRegex.test(email)){
+                    emailError.innerText = "Email is Not Valid";
+                    emailError.style.color="red";
+                }
+            }
+
+            if(password === ""){
+                 let passwordError = document.getElementById('passwordError');
+                passwordError.innerText = "Password is Required";
+                passwordError.style.color="red";
+            }else{
+                regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                if(!regex.test(password)){
+                    passwordError.innerText = "Password not valid";
+                    passwordError.style.color="red";
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>
