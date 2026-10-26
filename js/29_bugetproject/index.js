@@ -1,53 +1,66 @@
-let users = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) :[];
+let users = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) : [];
 
-let saverecord = () =>{
+let saverecord = () => {
     let name = document.getElementById("name").value
     let amount = document.getElementById("amount").value
-    let editid=document.getElementById("editid").value
+    let editid = document.getElementById("editid").value
+    let type = document.getElementById("type").value
 
-    let obj ={
-        id:Math.floor(Math.random()*10000),
+    let obj = {
+        id: Math.floor(Math.random() * 10000),
         name,
         amount,
-        type: document.getElementById("type").value
+        type
     }
 
-    if(editid){
-        let users = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) :[];
-       let up = users.map((val)=>{
-            if(val.id == editid){
-                val.name=name
-                val.amount=amount
+    if (editid) {
+        let users = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) : [];
+        let up = users.map((val) => {
+            if (val.id == editid) {
+                val.name = name
+                val.amount = amount
+                val.type = type;
             }
             return val;
-       }) 
-       localStorage.setItem("expense",JSON.stringify(up))
-       alert("update record")
-       getexpes();
-       document.getElementById("editid").value="";
+        })
+        localStorage.setItem("expense", JSON.stringify(up))
+        alert("update record")
+        getexpes();
+        document.getElementById("editid").value = "";
 
-    }else{
+    } else {
         users.push(obj);
-        localStorage.setItem("expense",JSON.stringify(users));
+        localStorage.setItem("expense", JSON.stringify(users));
         alert("add record")
         getexpes();
     }
 
+    document.getElementById("name").value = "";
+    document.getElementById("amount").value = "";
+    document.getElementById("editid").value = "";
+    document.getElementById("type").value = "Expense";
 }
 
-    document.getElementById("name").value="";
-    document.getElementById("amount").value="";
 
 
-let getexpes = () =>{
-    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) :[]
+
+let getexpes = () => {
+    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) : []
 
 
-    let tbl="";
-    
+    let tbl = "";
+
+    let totalincome = 0;
+    let totalexpense = 0;
+
     allusers.map((val) => {
-    
-        tbl+=`
+
+        if (val.type == "Income") {
+            totalincome += Number(val.amount);
+        } else {
+            totalexpense += Number(val.amount);
+        }
+        tbl += `
                 <tr>
                     <td>${val.id}</td>
                      <td>${val.name}</td>
@@ -60,40 +73,46 @@ let getexpes = () =>{
                 </tr>
             `
     })
-    document.getElementById("record").innerHTML=tbl;
+    document.getElementById("record").innerHTML = tbl;
 
+    let balance = totalincome - totalexpense;
+
+    document.getElementById("income").innerText = totalincome;
+    document.getElementById("expenses").innerText = totalexpense;
+    document.getElementById("balance").innerText = balance;
 
 }
 getexpes();
 
 
-let deleteexpense = (id) =>{
+let deleteexpense = (id) => {
 
-    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) :[]
+    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) : []
 
 
-    let deleteRecord = allusers.filter((val)=>{
+    let deleteRecord = allusers.filter((val) => {
         return val.id != id;
     })
 
-    localStorage.setItem("expense",JSON.stringify(deleteRecord))
+    localStorage.setItem("expense", JSON.stringify(deleteRecord))
     alert("delete record")
     getexpes();
 
 }
 
 
-let editexpense = (id) =>{
+let editexpense = (id) => {
 
-    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) :[]
+    let allusers = localStorage.getItem("expense") ? JSON.parse(localStorage.getItem("expense")) : []
 
-    let single = allusers.find((val) =>{
+    let single = allusers.find((val) => {
         return val.id == id;
     })
 
-    document.getElementById("name").value=single.name
-    document.getElementById("amount").value=single.amount
-    document.getElementById("editid").value=id
+    document.getElementById("name").value = single.name
+    document.getElementById("amount").value = single.amount
+    document.getElementById("editid").value = id
+    document.getElementById("type").value = single.type
 
 }
 

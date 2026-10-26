@@ -7,88 +7,190 @@
 </head>
 <body>
     <script>
-        // function greet(name,callback){
-        //     console.log("hello " + name);
-        //     callback();
+       //callback
+    //    function greet(name,callback){
+    //     console.log("hello "+name);
+
+    //     callback();
+        
+    //    }
+    //    function sayby(){
+    //     console.log("good moring");
+        
+    //    }
+
+    //    greet("mahek",sayby)
+
+    //Callback with setTimeout()
+    // setTimeout(function(){
+    //     console.log("hello everyone");
+        
+    // },2000)
+
+    // Example of Callback Hell
+    // function login(callback){
+    //     setTimeout(function(){
+    //         console.log("user login");
+    //         callback();
+    //     },1000)
+    // }
+
+    // function getProfile(callback){
+    //     setTimeout(function(){
+    //         console.log("user profile");
+    //         callback();
+    //     },1000)
+    // }
+
+    // function getOrders(callback){
+    //     setTimeout(function(){
+    //         console.log("user order");
+    //         callback();
+    //     },1000)
+    // }
+
+    // function getpayments(callback){
+    //     setTimeout(function(){
+    //         console.log("payments successfully");
+    //         callback();
+    //     },1000)
+    // }
+
+
+    // login(function(){
+    //     getProfile(function(){
+    //         getOrders(function(){
+    //             getpayments(function(){
+    //                 console.log("payments compleated");
+                    
+    //             })
+    //         })
+    //     })
+    // })
+
+
+    //Promises
+//   let p =new Promise(function(res,rej){
+
+//     let success = true;
+
+//     if(success){
+//         console.log("data loaded");
+        
+//     }else{
+//         console.log("error message");
+        
+//     }
+//   })
+
+//   p.then(function(result){
+//     console.log(result);
+    
+//   }).catch(function(error){
+//     console.log(error);
+    
+//   })
+
+     //  example setTimeout in Promise
+    //  let promise = new Promise(function(resolve){
+    //     setTimeout(function(){
+    //     resolve("Welcome");
+    //     },2000);
+    //     });
+    //     promise.then(function(data){
+    //     console.log(data);
+      //  });
+
+      //Event Loop
+    //   console.log("start");
+    //   setTimeout(function(){
+    //     console.log("hello");
+        
+    //   },0)
+    //   console.log("end");
+
+
+    ///asnc
+        // async function hello(){
+        //     return "hello";
         // }
-        // function sayby(){
-        //     console.log("good bye");
+
+        // hello().then(function(data){
+        //     console.log(data);
+            
+        // })
+
+
+        //Await
+        // function fetchData(){
+        //     return new Promise(function(res){
+        //        setTimeout(function(){
+        //         console.log("data");
+                
+        //        },1000)
+        //     })
+        // }
+
+        // async function display(){
+        //     let data = await fetchData()
+        //         console.log("data");
+                
             
         // }
-        // greet("mahek",sayby)
+        // display()
 
 
-        //Callback with setTimeout()
-        // setTimeout(function () {
-        // console.log("Executed after 2 seconds");
-        // }, 2000);
-
-
-
-        //Callback Hell
-        // function login(callback){
-        //     setTimeout(function (){
-        //         console.log("user logged in");
-        //         callback();
-        //     },1000)
+        //Async/Await Example
+        // function getuser(){
+        //     return new Promise(function(res){
+        //         setTimeout(function(){
+        //             res("mahek")
+        //         },2000)
+        //     })
         // }
+        
 
-        // function getprofile(callback){
-        //     setTimeout(function() {
-        //         console.log("profile loaded");
-        //         callback();
-        //     }, 1000);
+        // async function showuser(){
+        //     console.log("loading...");
+        // let data = await getuser();
+        // console.log(data);
+        
+            
         // }
+        // showuser()
 
-        // function getorder(callback){
-        //     setTimeout(function() {
-        //         console.log("get order");
-        //         callback();
-        //     }, 1000);
-        // }
-
-        // function getpayment(callback){
-        //     setTimeout(function() {
-        //         console.log("payment successully");
-        //         callback();
-        //     }, 1000);
-        // }
-
-
-
-        // login(function(){
-        //     getprofile(function(){
-        //         getorder(function(){
-        //             getpayment(function(){
-        //                 console.log("payment complted");
-                        
-        //             });
-
-        //         });
-        //     });
-        // });
-
-
-        //Promise
-        let Promise = new promise(function(res,rev){
-
-            let success = true;
-            if(success){
-                console.log("data loaded");
+        // const getPosts = async() => {
+        //     try{
+        //         let data = await fetch(`https://dummyjson.com/posts`);
                 
-            }else{
-                console.log("data not loaded");
+        //         let res = await data.json();
+
+        //         console.log(res);
+                
+                
+        //     }catch(err){
+        //         console.log(err);
+        //         return false;
+        //     }
+        // }
+        // getPosts();
+
+
+        const getProducts = async() => {
+            try{
+                let data = await fetch(`https://dummyjson.com/products`);
+
+                let res =await data.json();
+                
+                console.log(res);
+                
+            }catch(err){
+                console.log(err)
+                return false;
                 
             }
-        })
-
-    
-        .then(function(result){
-        console.log(result);
-        })
-        .catch(function(error){
-        console.log(error);
-        });
+        }
+        getProducts();
     </script>
 </body>
 </html>
